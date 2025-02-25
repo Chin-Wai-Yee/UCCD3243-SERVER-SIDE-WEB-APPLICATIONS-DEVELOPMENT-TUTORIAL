@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Form</title>
+</head>
+    <body>
+        <h1>User Input Form</h1>
+        <form method="GET" action="process_form_get.php">
+            <label>Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label>Age:</label>
+            <input type="number" id="age" name="age" required>
+            <br>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            <br>
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests[]" value="Sports"> Sports
+            <input type="checkbox" id="music" name="interests[]" value="Music"> Music
+            <input type="checkbox" id="reading" name="interests[]" value="Reading"> Reading
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

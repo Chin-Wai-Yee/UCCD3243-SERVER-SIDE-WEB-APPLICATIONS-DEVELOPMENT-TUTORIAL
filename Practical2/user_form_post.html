@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Inquiry Form</title>
+</head>
+ <body>
+    <h1>User Inquiry Form</h1>
+    <form method="POST" action="process_form_post.php">
+        <label>Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label>Password:</label>
+        <input type="password" id="pswd" name="pswd" required>
+        <br>
+        <label>Address:</label>
+        <textarea id="address" name="address" required></textarea>
+        <br>
+        <label>Internet Plan:</label>
+        <select name="plan" required>
+        <option value="Unifi">Unifi</option>
+        <option value="TIME">TIME</option>
+        <option value="Maxis">Maxis</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+ </body>
+</html>

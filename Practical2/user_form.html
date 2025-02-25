@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Form</title>
+</head>
+<body>
+    <h1>User Input and Calculator</h1>
+    <form method="POST" action="process_user.php">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <br>
+        <label>Age:</label>
+        <input type="number" name="age" required>
+        <br>
+        <input type="submit" value="Submit User Info">
+    </form>
+    <hr>
+    <form method="GET" action="process_calculator.php">
+        <label>Number 1:</label>
+        <input type="number" name="num1" required>
+        <br>
+        <label>Number 2:</label>
+        <input type="number" name="num2" required>
+        <br>
+        <label>Operation:</label>
+        <select name="operation" required>
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+        </select>
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>

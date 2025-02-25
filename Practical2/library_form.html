@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library System</title>
+</head>
+<body>
+    <h1>Library System</h1>
+    <h2>Check Book Availability</h2>
+    <form method="GET" action="check_availability.php">
+        <label>Book Title:</label>
+        <input type="text" name="title" required><br>
+        <input type="submit" value="Check Availability">
+    </form>
+    <hr>
+    <h2>Submit Book Recommendation</h2>
+    <form method="POST" action="submit_recommendation.php">
+        <label>Book Title:</label>
+        <input type="text" name="title" required><br>
+        <label>Author:</label>
+        <input type="text" name="author" required><br>
+        <input type="submit" value="Submit Recommendation">
+    </form>
+</body>
+</html>
